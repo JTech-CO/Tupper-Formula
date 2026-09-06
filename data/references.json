@@ -1,0 +1,103 @@
+[
+  {
+    "id": "R1",
+    "authors": "Jeff Tupper",
+    "year": "2001",
+    "title": "Reliable Two-Dimensional Graphing Methods for Mathematical Formulae with Two Free Variables",
+    "venue": "SIGGRAPH 2001, pp. 77–86; Figure 13",
+    "url": "https://www.dgp.toronto.edu/~mooncake/papers/SIGGRAPH2001_Tupper.pdf",
+    "doi": "10.1145/383259.383267",
+    "type": "primary paper"
+  },
+  {
+    "id": "R2",
+    "authors": "Jakub Trávník",
+    "year": "2011; updates 2017, 2019",
+    "title": "Self Referential Formula in Math",
+    "venue": "Author’s technical notes",
+    "url": "https://jtra.cz/stuff/essays/math-self-reference/index.html",
+    "type": "author implementation"
+  },
+  {
+    "id": "R3",
+    "authors": "Jakub Trávník",
+    "year": "2019",
+    "title": "Trávník’s smooth self-referential formula",
+    "venue": "Author’s technical notes and implementation",
+    "url": "https://jtra.cz/stuff/essays/math-self-reference-smooth/index.html",
+    "type": "author implementation"
+  },
+  {
+    "id": "R4",
+    "authors": "Sai Teja Somu; Vidyanshu Mishra",
+    "year": "2021 preprint; 2023 journal",
+    "title": "On a Generalization of Tupper’s Formula for m Colours and n Dimensions",
+    "venue": "arXiv:2109.11013; Discrete Mathematics, article 113600",
+    "url": "https://arxiv.org/abs/2109.11013",
+    "doi": "10.1016/j.disc.2023.113600",
+    "type": "primary paper"
+  },
+  {
+    "id": "R5",
+    "authors": "Samuel Allen Alexander",
+    "year": "2025 preprint",
+    "title": "Self-graphing equations",
+    "venue": "arXiv:2504.00006; dated version, 18 March 2025",
+    "url": "https://arxiv.org/html/2504.00006v1",
+    "type": "primary paper"
+  },
+  {
+    "id": "R6",
+    "authors": "Python Software Foundation",
+    "year": "accessed 2026-09-06",
+    "title": "Built-in Types: integer string conversion length limitation",
+    "venue": "Official Python documentation",
+    "url": "https://docs.python.org/3/library/stdtypes.html#integer-string-conversion-length-limitation",
+    "type": "official documentation"
+  },
+  {
+    "id": "R7",
+    "authors": "MDN contributors",
+    "year": "accessed 2026-09-06",
+    "title": "MathML",
+    "venue": "Browser documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/MathML",
+    "type": "implementation documentation"
+  },
+  {
+    "id": "R8",
+    "authors": "MDN contributors",
+    "year": "accessed 2026-09-06",
+    "title": "BigInt",
+    "venue": "JavaScript reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+    "type": "implementation documentation"
+  },
+  {
+    "id": "R9",
+    "authors": "Matplotlib contributors",
+    "year": "accessed 2026-09-06",
+    "title": "Writing mathematical expressions",
+    "venue": "Official Mathtext documentation",
+    "url": "https://matplotlib.org/stable/users/explain/text/mathtext.html",
+    "type": "official documentation"
+  },
+  {
+    "id": "R10",
+    "authors": "GitHub",
+    "year": "accessed 2026-09-06",
+    "title": "Configuring a publishing source for your GitHub Pages site",
+    "venue": "Official GitHub documentation",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+    "type": "official documentation"
+  },
+  {
+    "id": "R11",
+    "authors": "Jakub Trávník",
+    "year": "2019",
+    "title": "Detailed explanation of formula functions and format of N",
+    "venue": "Author’s technical explanation",
+    "url": "https://jtra.cz/stuff/essays/math-self-reference-smooth/detailed-explanation.html",
+    "type": "author implementation"
+  }
+]

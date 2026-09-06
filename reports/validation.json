@@ -1,0 +1,228 @@
+{
+  "project": "Tupper-Formula",
+  "version": "1.0.0",
+  "prepared_on": "2026-09-06",
+  "status": "passed_with_explicit_scope_limitations",
+  "environment": {
+    "python": "3.13.5",
+    "node": "v22.16.0",
+    "os": "Linux",
+    "architecture": "x86_64",
+    "matplotlib": "3.10.8",
+    "pillow": "12.3.0"
+  },
+  "python_unit_tests": {
+    "run": 40,
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "javascript_unit_tests": {
+    "run": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "command": "npm test"
+  },
+  "arithmetic_experiments": {
+    "suite": "arithmetic-v1",
+    "seed": 20260906,
+    "python": "3.13.5",
+    "exhaustive_bitmaps": 658,
+    "random_bitmaps": 300,
+    "binary_cells": 65856,
+    "literal_rational_midpoints": 5442,
+    "radix_arrays": 8,
+    "mismatches": 0,
+    "passed": true,
+    "scope": "Finite regression evidence. General correctness follows from the documented identity."
+  },
+  "large_formula_literal_check": {
+    "passed": true,
+    "mismatches": 0,
+    "cells": 11296,
+    "literal_midpoints": 11296,
+    "bitmap_sha256": "03bb0f3bbef732280baf90a58d9cb694f3c05205ffd886fe3fd7c615126322ae",
+    "scope": "encoded binary mask and arithmetic; not semantic or typographic self-reference"
+  },
+  "cross_language": {
+    "passed": true,
+    "javascript_exports_verified_in_python": 3,
+    "report": "cross-language.json"
+  },
+  "browser_ui": {
+    "suite": "browser-ui/v1",
+    "passed": true,
+    "mode": "memory",
+    "browser": "Chromium",
+    "browser_version": "144.0.7559.96",
+    "checks": 61,
+    "check_names": [
+      "English initial language",
+      "known A offset",
+      "rendered MathML",
+      "nonempty LaTeX control 1",
+      "nonempty LaTeX control 2",
+      "nonempty LaTeX control 3",
+      "nonempty LaTeX control 4",
+      "nonempty LaTeX control 5",
+      "nonempty LaTeX control 6",
+      "nonempty LaTeX control 7",
+      "nonempty LaTeX control 8",
+      "nonempty LaTeX control 9",
+      "nonempty LaTeX control 10",
+      "nonempty LaTeX control 11",
+      "nonempty LaTeX control 12",
+      "nonempty LaTeX control 13",
+      "nonempty LaTeX control 14",
+      "nonempty LaTeX control 15",
+      "every displayed equation copy handler",
+      "Korean language toggle",
+      "Korean lab label",
+      "preset a",
+      "zero mismatches a",
+      "preset asymmetric",
+      "zero mismatches asymmetric",
+      "preset historical",
+      "zero mismatches historical",
+      "preset formula",
+      "zero mismatches formula",
+      "preset bit",
+      "zero mismatches bit",
+      "orientation preserves canonical k",
+      "numeric cell edit changes k",
+      "keyboard pixel edit",
+      "canonical row editor",
+      "invalid rows rejected",
+      "unaligned offset rejected",
+      "repeated offset normalizes to visible mask",
+      "next occurrence calculation",
+      "valid JSON import",
+      "tampered JSON rejected",
+      "browser export verified by Python",
+      "SVG export serialization",
+      "PBM export serialization",
+      "manual clipboard fallback",
+      "sidebar tracks laboratory",
+      "no viewport overflow en/overview",
+      "no viewport overflow en/laboratory",
+      "no viewport overflow en/beyond",
+      "large mask no viewport overflow en/historical",
+      "large mask left edge reachable en/historical",
+      "large mask no viewport overflow en/formula",
+      "large mask left edge reachable en/formula",
+      "no viewport overflow ko/overview",
+      "no viewport overflow ko/laboratory",
+      "no viewport overflow ko/beyond",
+      "large mask no viewport overflow ko/historical",
+      "large mask left edge reachable ko/historical",
+      "large mask no viewport overflow ko/formula",
+      "large mask left edge reachable ko/formula",
+      "no uncaught page errors"
+    ],
+    "page_errors": [],
+    "static_formula_copy_controls": 15,
+    "viewports": [
+      [
+        1440,
+        1060
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "sha256_test_bridge_used": true,
+    "test_doubles": [
+      "clipboard receiver",
+      "download receiver",
+      "local JSON fetch",
+      "URL history"
+    ],
+    "limits": [
+      "No actual OS clipboard or download-folder assertion",
+      "No deployed GitHub Pages or social-crawler test",
+      "No Firefox/WebKit test",
+      "Browser navigation and native ES module graph not exercised; authored modules injected in memory"
+    ],
+    "http_response_count": 28
+  },
+  "static_http": {
+    "suite": "static-http/v1",
+    "passed": true,
+    "files_per_route": 81,
+    "successful_requests": 164,
+    "routes": [
+      "/",
+      "/<repository>/"
+    ],
+    "scope": "Python HTTP client: exact local response bytes and index resolution. Not browser module execution or live GitHub Pages."
+  },
+  "formula_regeneration": [
+    {
+      "fixture": "formula-h32",
+      "same_saved_mask": true,
+      "same_k": true,
+      "sha256": "03bb0f3bbef732280baf90a58d9cb694f3c05205ffd886fe3fd7c615126322ae",
+      "width": 353,
+      "height": 32
+    },
+    {
+      "fixture": "bit-h32",
+      "same_saved_mask": true,
+      "same_k": true,
+      "sha256": "90de259af98d35341a484569135346928dcd209ea18fa8cbc23c44613131b3ec",
+      "width": 193,
+      "height": 32
+    }
+  ],
+  "package_install": {
+    "editable_install": "passed",
+    "command": "python -m pip install --no-deps --no-build-isolation -e ."
+  },
+  "ci_configuration": {
+    "python_versions": [
+      "3.11",
+      "3.12",
+      "3.13"
+    ],
+    "executed_in_github": false
+  },
+  "limits": [
+    "Managed browser navigation policy prevented local HTTP browsing in this environment. Authored UI was tested in-memory instead; no browser policy was modified.",
+    "Clipboard and file download endpoints in the UI harness were test doubles; SHA-256 in-memory used a Python hashlib bridge. Native Node Web Crypto and real HTTP response bytes were tested separately.",
+    "No live GitHub repository was created or pushed. Pages deployment, social previews, Firefox/WebKit and other Python versions were not executed here.",
+    "No independent formal proof assistant verification or claim of a new self-contained self-reference theorem."
+  ],
+  "additional_reports": [
+    "repository.json",
+    "cross-language.json",
+    "browser-memory.json",
+    "http.json",
+    "large-literal.json",
+    "python-tests.txt",
+    "javascript-tests.txt"
+  ],
+  "publication_helpers": {
+    "workflow_yaml_parsed": 2,
+    "staging_completed": true,
+    "publication_configuration_rewrite_test": "passed on a temporary copy",
+    "invalid_owner_inputs_rejected": 3,
+    "deployed": false
+  },
+  "repository_checks": {
+    "suite": "repository-publication/v1",
+    "passed": true,
+    "markdown_files": 22,
+    "language_pairs": 11,
+    "local_links_checked": 122,
+    "static_equations": 13,
+    "latex_copy_controls": 15,
+    "example_manifests": 5,
+    "jsonschema_checked": true,
+    "font_files_distributed": 0,
+    "errors": [],
+    "scope": "Local files, bilingual keys, semantic fixtures and publication metadata; external URLs and deployed Pages not checked."
+  }
+}

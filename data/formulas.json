@@ -1,0 +1,114 @@
+{
+  "original": {
+    "title": {
+      "en": "The historical predicate",
+      "ko": "원형 부등식"
+    },
+    "latex": "\\frac{1}{2}<\\left\\lfloor\\operatorname{mod}\\left(\\left\\lfloor\\frac{y}{17}\\right\\rfloor2^{-17\\lfloor x\\rfloor-\\operatorname{mod}(\\lfloor y\\rfloor,17)},2\\right)\\right\\rfloor",
+    "mathml": "<mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&lt;</mo><mrow><mo>⌊</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>⌊</mo><mfrac><mi>y</mi><mn>17</mn></mfrac><mo>⌋</mo></mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>17</mn><mrow><mo>⌊</mo><mi>x</mi><mo>⌋</mo></mrow><mo>−</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mi>y</mi><mo>⌋</mo></mrow><mo>,</mo><mn>17</mn></mrow><mo>)</mo></mrow></mrow></mrow></msup></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>⌋</mo></mrow></mrow>"
+  },
+  "encoding": {
+    "title": {
+      "en": "Store an image in one integer",
+      "ko": "이미지를 하나의 정수로 저장"
+    },
+    "latex": "N=\\sum_{i=0}^{W-1}\\sum_{j=0}^{H-1}b_{i,j}2^{Hi+j},\\qquad k=HN",
+    "mathml": "<mrow><mi>N</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>W</mi><mo>−</mo><mn>1</mn></mrow></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>H</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mi>b</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><msup><mn>2</mn><mrow><mi>H</mi><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup><mo>,</mo><mspace width=\"1em\"/><mi>k</mi><mo>=</mo><mi>H</mi><mi>N</mi></mrow>"
+  },
+  "bit": {
+    "title": {
+      "en": "Read one bit",
+      "ko": "비트 하나 읽기"
+    },
+    "latex": "b_{i,j}=\\left\\lfloor\\frac{N}{2^{Hi+j}}\\right\\rfloor\\bmod 2",
+    "mathml": "<mrow><msub><mi>b</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mfrac><mi>N</mi><msup><mn>2</mn><mrow><mi>H</mi><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup></mfrac><mo>⌋</mo></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></mrow>"
+  },
+  "generalized": {
+    "title": {
+      "en": "Generalized height H",
+      "ko": "높이 H 일반화"
+    },
+    "latex": "B_H(x,y)=\\left\\lfloor\\operatorname{mod}\\left(\\left\\lfloor\\frac{y}{H}\\right\\rfloor2^{-H\\lfloor x\\rfloor-\\operatorname{mod}(\\lfloor y\\rfloor,H)},2\\right)\\right\\rfloor",
+    "mathml": "<mrow><msub><mi>B</mi><mi>H</mi></msub><mrow><mo>(</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>⌊</mo><mfrac><mi>y</mi><mi>H</mi></mfrac><mo>⌋</mo></mrow><msup><mn>2</mn><mrow><mo>−</mo><mi>H</mi><mrow><mo>⌊</mo><mi>x</mi><mo>⌋</mo></mrow><mo>−</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mi>y</mi><mo>⌋</mo></mrow><mo>,</mo><mi>H</mi></mrow><mo>)</mo></mrow></mrow></mrow></msup></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>⌋</mo></mrow></mrow>"
+  },
+  "mod-identity": {
+    "title": {
+      "en": "The floor–mod identity",
+      "ko": "floor–mod 항등식"
+    },
+    "latex": "\\left\\lfloor\\operatorname{mod}(z,2)\\right\\rfloor=\\lfloor z\\rfloor\\bmod 2",
+    "mathml": "<mrow><mrow><mo>⌊</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mi>z</mi><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>⌋</mo></mrow><mo>=</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mi>z</mi><mo>⌋</mo></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></mrow>"
+  },
+  "coordinates": {
+    "title": {
+      "en": "Inside one unit cell",
+      "ko": "단위 칸 내부의 좌표"
+    },
+    "latex": "x=i+u,\\quad y=HN+j+v,\\quad 0\\le u,v<1",
+    "mathml": "<mrow><mi>x</mi><mo>=</mo><mi>i</mi><mo>+</mo><mi>u</mi><mo>,</mo><mspace width=\".6em\"/><mi>y</mi><mo>=</mo><mi>H</mi><mi>N</mi><mo>+</mo><mi>j</mi><mo>+</mo><mi>v</mi><mo>,</mo><mspace width=\".6em\"/><mn>0</mn><mo>≤</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>&lt;</mo><mn>1</mn></mrow>"
+  },
+  "proof": {
+    "title": {
+      "en": "Exact reconstruction",
+      "ko": "정확한 복원"
+    },
+    "latex": "B_H(x,y)=\\left\\lfloor\\frac{N}{2^{Hi+j}}\\right\\rfloor\\bmod2=b_{i,j}",
+    "mathml": "<mrow><msub><mi>B</mi><mi>H</mi></msub><mrow><mo>(</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mfrac><mi>N</mi><msup><mn>2</mn><mrow><mi>H</mi><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup></mfrac><mo>⌋</mo></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>=</mo><msub><mi>b</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow>"
+  },
+  "repeat": {
+    "title": {
+      "en": "Another occurrence of the same window",
+      "ko": "같은 창이 나타나는 다른 위치"
+    },
+    "latex": "k_t=H\\left(N+t\\,2^{WH}\\right),\\qquad t\\in\\{0,1,2,\\ldots\\}",
+    "mathml": "<mrow><msub><mi>k</mi><mi>t</mi></msub><mo>=</mo><mi>H</mi><mrow><mo>(</mo><mrow><mi>N</mi><mo>+</mo><mi>t</mi><msup><mn>2</mn><mrow><mi>W</mi><mi>H</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>,</mo><mspace width=\"1em\"/><mi>t</mi><mo>∈</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo>}</mo></mrow>"
+  },
+  "radix": {
+    "title": {
+      "en": "Read a base-C palette index",
+      "ko": "C진법 팔레트 인덱스 읽기"
+    },
+    "latex": "c_{i,j}=\\left\\lfloor\\frac{N_C}{C^{Hi+j}}\\right\\rfloor\\bmod C",
+    "mathml": "<mrow><msub><mi>c</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mfrac><msub><mi>N</mi><mi>C</mi></msub><msup><mi>C</mi><mrow><mi>H</mi><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup></mfrac><mo>⌋</mo></mrow><mo>,</mo><mi>C</mi></mrow><mo>)</mo></mrow></mrow></mrow>"
+  },
+  "selfgraph": {
+    "title": {
+      "en": "The stronger target",
+      "ko": "더 강한 자기 그래프화 목표"
+    },
+    "latex": "\\operatorname{Gr}(s)=\\operatorname{Gl}(s)",
+    "mathml": "<mrow><mi mathvariant=\"normal\">Gr</mi><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">Gl</mi><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow>"
+  },
+  "digits": {
+    "title": {
+      "en": "Read the digits of an embedded constant",
+      "ko": "상수의 자릿수 읽기"
+    },
+    "latex": "d_r=\\left\\lfloor\\frac{N}{10^r}\\right\\rfloor\\bmod10",
+    "mathml": "<mrow><msub><mi>d</mi><mi>r</mi></msub><mo>=</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mfrac><mi>N</mi><msup><mn>10</mn><mi>r</mi></msup></mfrac><mo>⌋</mo></mrow><mo>,</mo><mn>10</mn></mrow><mo>)</mo></mrow></mrow></mrow>"
+  },
+  "fixedpoint": {
+    "title": {
+      "en": "A behavioral fixed point",
+      "ko": "동작에 관한 고정점"
+    },
+    "latex": "\\exists e\\;\\varphi_e=\\varphi_{f(e)}\\qquad\\text{(not necessarily }e=f(e)\\text{)}",
+    "mathml": "<mrow><mo>∃</mo><mi>e</mi><mspace width=\".5em\"/><msub><mi>φ</mi><mi>e</mi></msub><mo>=</mo><msub><mi>φ</mi><mrow><mi>f</mi><mrow><mo>(</mo><mi>e</mi><mo>)</mo></mrow></mrow></msub><mspace width=\"1em\"/><mtext>(not necessarily </mtext><mi>e</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>e</mi><mo>)</mo></mrow><mtext>)</mtext></mrow>"
+  },
+  "letter": {
+    "title": {
+      "en": "The 3×5 letter A",
+      "ko": "3×5 문자 A"
+    },
+    "latex": "N=15+20\\cdot2^5+15\\cdot2^{10}=16015,\\qquad k=5N=80075",
+    "mathml": "<mrow><mi>N</mi><mo>=</mo><mn>15</mn><mo>+</mo><mn>20</mn><mo>·</mo><msup><mn>2</mn><mn>5</mn></msup><mo>+</mo><mn>15</mn><mo>·</mo><msup><mn>2</mn><mn>10</mn></msup><mo>=</mo><mn>16015</mn><mo>,</mo><mspace width=\"1em\"/><mi>k</mi><mo>=</mo><mn>5</mn><mi>N</mi><mo>=</mo><mn>80075</mn></mrow>"
+  },
+  "dynamic": {
+    "latex_template": "\\frac{1}{2}<\\left\\lfloor\\operatorname{mod}\\left(\\left\\lfloor\\frac{y}{__H__}\\right\\rfloor2^{-__H__\\lfloor x\\rfloor-\\operatorname{mod}(\\lfloor y\\rfloor,__H__)},2\\right)\\right\\rfloor",
+    "mathml_template": "<mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&lt;</mo><mrow><mo>⌊</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mrow><mo>⌊</mo><mfrac><mi>y</mi>__H__</mfrac><mo>⌋</mo></mrow><msup><mn>2</mn><mrow><mo>−</mo>__H__<mrow><mo>⌊</mo><mi>x</mi><mo>⌋</mo></mrow><mo>−</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mi>y</mi><mo>⌋</mo></mrow><mo>,</mo>__H__</mrow><mo>)</mo></mrow></mrow></mrow></msup></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>⌋</mo></mrow></mrow>"
+  },
+  "dynamic-bit": {
+    "latex_template": "\\frac{1}{2}<\\operatorname{mod}\\left(\\left\\lfloor\\frac{\\left\\lfloor\\frac{y}{__H__}\\right\\rfloor}{2^{__H__\\lfloor x\\rfloor+\\operatorname{mod}(\\lfloor y\\rfloor,__H__)}}\\right\\rfloor,2\\right)",
+    "mathml_template": "<mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&lt;</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>y</mi>__H__</mfrac><mo>⌋</mo></mrow><msup><mn>2</mn><mrow>__H__<mrow><mo>⌊</mo><mi>x</mi><mo>⌋</mo></mrow><mo>+</mo><mrow><mi mathvariant=\"normal\">mod</mi><mrow><mo>(</mo><mrow><mrow><mo>⌊</mo><mi>y</mi><mo>⌋</mo></mrow><mo>,</mo>__H__</mrow><mo>)</mo></mrow></mrow></mrow></msup></mfrac><mo>⌋</mo></mrow><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></mrow>"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "tupper-experiment/v1",
+  "width": 5,
+  "height": 3,
+  "encoding": "column-major-bottom-up",
+  "rows": [
+    "10010",
+    "01000",
+    "00101"
+  ],
+  "N": "6228",
+  "k": "18684",
+  "canonical": true,
+  "display_orientation": "cartesian",
+  "formula_variant": "tupper",
+  "formula_latex": "\\frac{1}{2}<\\left\\lfloor\\operatorname{mod}\\left(\\left\\lfloor\\frac{y}{3}\\right\\rfloor2^{-3\\lfloor x\\rfloor-\\operatorname{mod}(\\lfloor y\\rfloor,3)},2\\right)\\right\\rfloor",
+  "domain": {
+    "x": [
+      0,
+      5
+    ],
+    "y_relative_to_k": [
+      0,
+      3
+    ],
+    "endpoints": "left-closed-right-open"
+  },
+  "bitmap_sha256": "a70d11b19ccbf455987a879312eed1667a38ed31a0d320268872087854774655",
+  "source": {
+    "kind": "orientation-fixture"
+  },
+  "generator": {
+    "name": "tupper-formula",
+    "version": "1.0.0",
+    "python": "3.13.5"
+  }
+}

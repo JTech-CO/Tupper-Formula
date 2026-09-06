@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "mismatches": 0,
+  "cells": 15,
+  "literal_midpoints": 0,
+  "bitmap_sha256": "37c4288708b25b1a0d4c3192e168cf7f6cd7670790c82c574261ce70728fc110",
+  "scope": "encoded binary mask and arithmetic; not semantic or typographic self-reference"
+}

@@ -1,0 +1,11 @@
+{
+  "suite": "static-http/v1",
+  "passed": true,
+  "files_per_route": 81,
+  "successful_requests": 164,
+  "routes": [
+    "/",
+    "/<repository>/"
+  ],
+  "scope": "Python HTTP client: exact local response bytes and index resolution. Not browser module execution or live GitHub Pages."
+}

@@ -1,0 +1,86 @@
+
+> tupper-formula-research@1.0.0 test
+> node --test tests/web/*.test.mjs
+
+TAP version 13
+# Subtest: known letter A has N=16015 and k=80075
+ok 1 - known letter A has N=16015 and k=80075
+  ---
+  duration_ms: 7.059818
+  type: 'test'
+  ...
+# Subtest: all masks for 1x1, 2x2, 3x2, 2x3 and 3x3
+ok 2 - all masks for 1x1, 2x2, 3x2, 2x3 and 3x3
+  ---
+  duration_ms: 9.529183
+  type: 'test'
+  ...
+# Subtest: presets match Python N, k, formula, digest and canonical masks
+ok 3 - presets match Python N, k, formula, digest and canonical masks
+  ---
+  duration_ms: 30.216867
+  type: 'test'
+  ...
+# Subtest: historical orientation reverses both axes, not the stored mask
+ok 4 - historical orientation reverses both axes, not the stored mask
+  ---
+  duration_ms: 0.223638
+  type: 'test'
+  ...
+# Subtest: repeated occurrence has the same finite viewport
+ok 5 - repeated occurrence has the same finite viewport
+  ---
+  duration_ms: 0.194574
+  type: 'test'
+  ...
+# Subtest: dimensions, all-zero image and leading empty columns are explicit
+ok 6 - dimensions, all-zero image and leading empty columns are explicit
+  ---
+  duration_ms: 0.591037
+  type: 'test'
+  ...
+# Subtest: reject invalid data, floats, oversized integers and unaligned k
+ok 7 - reject invalid data, floats, oversized integers and unaligned k
+  ---
+  duration_ms: 0.449064
+  type: 'test'
+  ...
+# Subtest: row parser handles ./\# and CRLF
+ok 8 - row parser handles ./\# and CRLF
+  ---
+  duration_ms: 0.26362
+  type: 'test'
+  ...
+# Subtest: SHA-256 payload has documented dimensions and terminal newline
+ok 9 - SHA-256 payload has documented dimensions and terminal newline
+  ---
+  duration_ms: 5.010896
+  type: 'test'
+  ...
+# Subtest: web manifest round trip and all semantic tampering rejected
+ok 10 - web manifest round trip and all semantic tampering rejected
+  ---
+  duration_ms: 3.657251
+  type: 'test'
+  ...
+# Subtest: PBM and SVG exports contain exact discrete masks
+ok 11 - PBM and SVG exports contain exact discrete masks
+  ---
+  duration_ms: 0.468917
+  type: 'test'
+  ...
+# Subtest: large offset stays BigInt and is never coerced through Number
+ok 12 - large offset stays BigInt and is never coerced through Number
+  ---
+  duration_ms: 0.119325
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 201.468719

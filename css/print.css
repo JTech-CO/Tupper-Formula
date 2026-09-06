@@ -1,0 +1,130 @@
+@page {
+  size:A4;
+  margin:18mm 17mm
+}
+html {
+  scroll-behavior:auto
+}
+body {
+  color:#000;
+  background:#fff;
+  font-size:10.5pt;
+  line-height:1.55
+}
+.site-header,.sidebar,.skip-link,.header-actions,.equation button,.tex-source,.lab-controls,.dimension-controls,.button-row,.data-tools,.cell-controls,.cell-result button,.limits,.privacy,#canvas-help,dialog,.app-loading {
+  display:none!important
+}
+.page-layout {
+  display:block;
+  max-width:none;
+  margin:0;
+  padding:0
+}
+main {
+  max-width:none
+}
+main section {
+  padding:20pt 0
+}
+h1 {
+  font-size:31pt
+}
+h2 {
+  font-size:20pt;
+  break-after:avoid
+}
+h3,h4 {
+  break-after:avoid
+}
+.standfirst {
+  font-size:13pt
+}
+.paper-meta {
+  font-size:8pt
+}
+.equation {
+  break-inside:avoid
+}
+.math-body {
+  overflow:visible;
+  font-size:10pt
+}
+.math-body math {
+  font-size:1em;
+  min-width:0
+}
+.historical-figure {
+  break-inside:avoid
+}
+.historical-figure img {
+  max-width:100%;
+  height:auto
+}
+.laboratory-panel {
+  border:1px solid #aaa;
+  background:white;
+  padding:10pt
+}
+.canvas-area {
+  border:0;
+  min-height:0
+}
+.decoded-strip img {
+  max-height:40pt
+}
+.table-scroll {
+  overflow:visible
+}
+table {
+  min-width:0;
+  font-size:8pt
+}
+tr {
+  break-inside:avoid
+}
+thead {
+  display:table-header-group
+}
+.code-block {
+  break-inside:avoid
+}
+pre {
+  white-space:pre-wrap;
+  overflow-wrap:anywhere
+}
+pre code {
+  font-size:8pt
+}
+.research-stats {
+  font-size:8pt
+}
+.references {
+  font-size:8pt
+}
+.references li {
+  break-inside:avoid
+}
+a {
+  color:#000;
+  text-decoration:none
+}
+.references a::after {
+  content:" (" attr(href) ")";
+  font-size:7pt;
+  overflow-wrap:anywhere
+}
+.integer-output {
+  font-size:7pt;
+  height:70pt;
+  overflow:hidden
+}
+.paper-footer {
+  font-size:8pt
+}
+.paper-footer a,.resource-links {
+  display:none
+}
+* {
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact
+}

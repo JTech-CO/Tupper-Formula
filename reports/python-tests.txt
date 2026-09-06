@@ -1,0 +1,47 @@
+test_a_known_integer (test_core.CoreTests.test_a_known_integer) ... ok
+test_all_small_bitmaps (test_core.CoreTests.test_all_small_bitmaps) ... ok
+test_asymmetric_orientation (test_core.CoreTests.test_asymmetric_orientation) ... ok
+test_boundaries_belong_to_right_or_upper_cell (test_core.CoreTests.test_boundaries_belong_to_right_or_upper_cell) ... ok
+test_decimal_beyond_default_limit (test_core.CoreTests.test_decimal_beyond_default_limit) ... ok
+test_decimal_chunks (test_core.CoreTests.test_decimal_chunks) ... ok
+test_decimal_invalid (test_core.CoreTests.test_decimal_invalid) ... ok
+test_enormous_rational_coordinates (test_core.CoreTests.test_enormous_rational_coordinates) ... ok
+test_every_cell_of_a (test_core.CoreTests.test_every_cell_of_a) ... ok
+test_formula_variants (test_core.CoreTests.test_formula_variants) ... ok
+test_fractional_points (test_core.CoreTests.test_fractional_points) ... ok
+test_immutable (test_core.CoreTests.test_immutable) ... ok
+test_leading_zeros_need_dimensions (test_core.CoreTests.test_leading_zeros_need_dimensions) ... ok
+test_misalignment (test_core.CoreTests.test_misalignment) ... ok
+test_reject_float_bool_and_negative_coordinates (test_core.CoreTests.test_reject_float_bool_and_negative_coordinates) ... ok
+test_reject_invalid_bitmaps (test_core.CoreTests.test_reject_invalid_bitmaps) ... ok
+test_reject_invalid_dimensions (test_core.CoreTests.test_reject_invalid_dimensions) ... ok
+test_repeated_window (test_core.CoreTests.test_repeated_window) ... ok
+test_zero_image (test_core.CoreTests.test_zero_image) ... ok
+test_ascii_dot_hash (test_io_manifest.IOTests.test_ascii_dot_hash) ... ok
+test_pbm_bad_count (test_io_manifest.IOTests.test_pbm_bad_count) ... ok
+test_pbm_comments (test_io_manifest.IOTests.test_pbm_comments) ... ok
+test_pbm_roundtrip (test_io_manifest.IOTests.test_pbm_roundtrip) ... ok
+test_svg_escaped_and_valid (test_io_manifest.IOTests.test_svg_escaped_and_valid) ... ok
+test_svg_historical (test_io_manifest.IOTests.test_svg_historical) ... ok
+test_all_checked_in_examples (test_io_manifest.ManifestTests.test_all_checked_in_examples) ... ok
+test_bundle_no_overwrite (test_io_manifest.ManifestTests.test_bundle_no_overwrite) ... ok
+test_digest_includes_dimensions (test_io_manifest.ManifestTests.test_digest_includes_dimensions) ... ok
+test_literal_verification (test_io_manifest.ManifestTests.test_literal_verification) ... ok
+test_stored_verification_flag_not_trusted (test_io_manifest.ManifestTests.test_stored_verification_flag_not_trusted) ... ok
+test_tampering_rejected (test_io_manifest.ManifestTests.test_tampering_rejected) ... ok
+test_end_to_end (test_radix_cli_render.CLITests.test_end_to_end) ... ok
+test_error_exit (test_radix_cli_render.CLITests.test_error_exit) ... ok
+test_index_order (test_radix_cli_render.RadixTests.test_index_order) ... ok
+test_invalid (test_radix_cli_render.RadixTests.test_invalid) ... ok
+test_rgb_palette_indices (test_radix_cli_render.RadixTests.test_rgb_palette_indices) ... ok
+test_volume (test_radix_cli_render.RadixTests.test_volume) ... ok
+test_construct_formula (test_radix_cli_render.RenderTests.test_construct_formula) ... /mnt/data/Tupper-Formula/src/tupper_formula/render.py:46: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(image.getdata())
+ok
+test_transparency (test_radix_cli_render.RenderTests.test_transparency) ... ok
+test_unsupported_height (test_radix_cli_render.RenderTests.test_unsupported_height) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.725s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "suite": "js-to-python/v1",
+  "cases": 3,
+  "all_passed": true,
+  "results": [
+    {
+      "passed": true,
+      "mismatches": 0,
+      "cells": 15,
+      "literal_midpoints": 15,
+      "bitmap_sha256": "37c4288708b25b1a0d4c3192e168cf7f6cd7670790c82c574261ce70728fc110",
+      "scope": "encoded binary mask and arithmetic; not semantic or typographic self-reference"
+    },
+    {
+      "passed": true,
+      "mismatches": 0,
+      "cells": 15,
+      "literal_midpoints": 15,
+      "bitmap_sha256": "a70d11b19ccbf455987a879312eed1667a38ed31a0d320268872087854774655",
+      "scope": "encoded binary mask and arithmetic; not semantic or typographic self-reference"
+    },
+    {
+      "passed": true,
+      "mismatches": 0,
+      "cells": 24,
+      "literal_midpoints": 24,
+      "bitmap_sha256": "f98cb159d9978c3a7ed445aa595f0dce52d863e3b73a9a4e70b16934d6ae7bc1",
+      "scope": "encoded binary mask and arithmetic; not semantic or typographic self-reference"
+    }
+  ],
+  "scope": "Native Node ES modules export the browser-format schema; Python recomputes it with literal rational checks. Not an OS file-dialog test."
+}

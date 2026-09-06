@@ -1,0 +1,14 @@
+{
+  "suite": "repository-publication/v1",
+  "passed": true,
+  "markdown_files": 22,
+  "language_pairs": 11,
+  "local_links_checked": 122,
+  "static_equations": 13,
+  "latex_copy_controls": 15,
+  "example_manifests": 5,
+  "jsonschema_checked": true,
+  "font_files_distributed": 0,
+  "errors": [],
+  "scope": "Local files, bilingual keys, semantic fixtures and publication metadata; external URLs and deployed Pages not checked."
+}

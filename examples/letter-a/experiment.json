@@ -1,0 +1,41 @@
+{
+  "schema": "tupper-experiment/v1",
+  "width": 3,
+  "height": 5,
+  "encoding": "column-major-bottom-up",
+  "rows": [
+    "010",
+    "101",
+    "111",
+    "101",
+    "101"
+  ],
+  "N": "16015",
+  "k": "80075",
+  "canonical": true,
+  "display_orientation": "cartesian",
+  "formula_variant": "tupper",
+  "formula_latex": "\\frac{1}{2}<\\left\\lfloor\\operatorname{mod}\\left(\\left\\lfloor\\frac{y}{5}\\right\\rfloor2^{-5\\lfloor x\\rfloor-\\operatorname{mod}(\\lfloor y\\rfloor,5)},2\\right)\\right\\rfloor",
+  "domain": {
+    "x": [
+      0,
+      3
+    ],
+    "y_relative_to_k": [
+      0,
+      5
+    ],
+    "endpoints": "left-closed-right-open"
+  },
+  "bitmap_sha256": "37c4288708b25b1a0d4c3192e168cf7f6cd7670790c82c574261ce70728fc110",
+  "source": {
+    "kind": "bitmap",
+    "input_name": "letter-a.txt",
+    "threshold": null
+  },
+  "generator": {
+    "name": "tupper-formula",
+    "version": "1.0.0",
+    "python": "3.13.5"
+  }
+}

@@ -1,0 +1,2 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="40" viewBox="0 0 3 5" role="img" aria-labelledby="title desc">
+<title id="title">Tupper bitmap</title><desc id="desc">3 by 5 binary cells. Display: cartesian. Canonical rows are stored separately.</desc><rect width="3" height="5" fill="white"/><path fill="#192d3f" shape-rendering="crispEdges" d="M1,0h1v1h-1zM0,1h1v1h-1zM2,1h1v1h-1zM0,2h1v1h-1zM1,2h1v1h-1zM2,2h1v1h-1zM0,3h1v1h-1zM2,3h1v1h-1zM0,4h1v1h-1zM2,4h1v1h-1z"/></svg>

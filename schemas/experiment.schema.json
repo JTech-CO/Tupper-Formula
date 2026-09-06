@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jtech-co.github.io/Tupper-Formula/schemas/experiment.schema.json",
+  "title": "Tupper experiment manifest v1",
+  "type": "object",
+  "required": ["schema","width","height","encoding","rows","N","k","canonical","display_orientation","formula_variant","formula_latex","domain","bitmap_sha256"],
+  "properties": {
+    "schema": {"const":"tupper-experiment/v1"},
+    "width": {"type":"integer","minimum":1,"maximum":4096},
+    "height": {"type":"integer","minimum":1,"maximum":4096},
+    "encoding": {"const":"column-major-bottom-up"},
+    "rows": {"type":"array","minItems":1,"maxItems":4096,"items":{"type":"string","pattern":"^[01]+$","maxLength":4096}},
+    "N": {"type":"string","pattern":"^[0-9]+$","maxLength":25000},
+    "k": {"type":"string","pattern":"^[0-9]+$","maxLength":25000},
+    "canonical": {"const":true},
+    "display_orientation": {"enum":["cartesian","historical"]},
+    "formula_variant": {"enum":["tupper","bit"]},
+    "formula_latex": {"type":"string","maxLength":2000},
+    "bitmap_sha256": {"type":"string","pattern":"^[0-9a-f]{64}$"},
+    "domain": {
+      "type":"object","required":["x","y_relative_to_k","endpoints"],
+      "properties": {
+        "x":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"integer","minimum":0}},
+        "y_relative_to_k":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"integer","minimum":0}},
+        "endpoints":{"const":"left-closed-right-open"}
+      }, "additionalProperties":false
+    },
+    "source":{"type":"object"},"generator":{"type":"object"}
+  },
+  "additionalProperties":false,
+  "$comment":"Semantic equality, W*H limit, row dimensions, hash, formula and k=H*N require the runtime validator. Browser limits are intentionally smaller."
+}

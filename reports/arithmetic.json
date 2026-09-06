@@ -1,0 +1,13 @@
+{
+  "suite": "arithmetic-v1",
+  "seed": 20260906,
+  "python": "3.13.5",
+  "exhaustive_bitmaps": 658,
+  "random_bitmaps": 300,
+  "binary_cells": 65856,
+  "literal_rational_midpoints": 5442,
+  "radix_arrays": 8,
+  "mismatches": 0,
+  "passed": true,
+  "scope": "Finite regression evidence. General correctness follows from the documented identity."
+}
