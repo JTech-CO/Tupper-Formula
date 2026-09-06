@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Cite this software for implementation and reproducibility; cite the original papers for mathematical results."
+title: Tupper-Formula
+type: software
+version: 1.0.0
+date-released: 2026-09-06
+license: MIT
+authors:
+  - name: Tupper-Formula contributors
+repository-code: "https://github.com/JTech-CO/Tupper-Formula"
+url: "https://jtech-co.github.io/Tupper-Formula/"
+abstract: "Exact finite bitmap encodings, constructive Tupper-type self-images with external offsets, and a bilingual reproducible research laboratory."
+keywords:
+  - Tupper formula
+  - exact arithmetic
+  - reproducible research
+  - self-reference

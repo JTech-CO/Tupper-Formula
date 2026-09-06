@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tupper-formula"
+version = "1.0.0"
+description = "Exact bitmap encodings, constructive Tupper-type self-images, and reproducible experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Tupper-Formula contributors"}]
+keywords = ["tupper", "self-reference", "experimental-mathematics", "bitmap", "integer-arithmetic"]
+dependencies = []
+
+[project.optional-dependencies]
+render = ["matplotlib>=3.8,<4", "Pillow>=10,<13"]
+qa = ["playwright>=1.50,<2", "jsonschema>=4,<5"]
+
+[project.scripts]
+tupper = "tupper_formula.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
