@@ -1,0 +1,40 @@
+name: Research checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  arithmetic:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -e '.[render,qa]'
+      - run: python -m unittest discover -s tests -v
+      - run: python experiments/run_suite.py --output reports/arithmetic-ci.json
+      - run: npm test
+      - run: python scripts/crosscheck.py
+      - run: python scripts/build_site.py
+      - run: python scripts/validate_repo.py
+      - run: git diff --exit-code -- index.html sitemap.xml
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[qa]'
+      - run: python -m playwright install --with-deps chromium
+      - run: python scripts/browser_smoke.py --mode http --output reports/browser-ci.json
