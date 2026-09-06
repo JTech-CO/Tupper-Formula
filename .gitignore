@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+output/
+node_modules/
+.pytest_cache/
+.playwright/
+.DS_Store
+Thumbs.db
+
+_site/
+playwright-report/
